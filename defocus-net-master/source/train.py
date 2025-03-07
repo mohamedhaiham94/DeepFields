@@ -183,7 +183,8 @@ def train_model(loaders, model_info, viz_info, forward_pass, TRAIN_PARAMS, DATA_
 
         # Save model
         if (epoch_iter + 1) % 10 == 0:
-            torch.save(model_info['model'].state_dict(), model_info['model_dir'] + model_info['model_name'] + '_ep' + str(0) + '.pth')
+            print('*********************************Saving the model*********************************')
+            torch.save(model_info['model'].state_dict(), model_info['model_dir'] + model_info['model_name'] + '_ep' + str(epoch_iter+1) + '.pth')
 
 
 @defocus_exp.automain

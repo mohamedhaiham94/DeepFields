@@ -10,7 +10,7 @@ if True:
 
                         'TRAINING_MODE':1,
 
-                        'MODEL1_LOAD': False,
+                        'MODEL1_LOAD': True,
                         'MODEL1_ARCH_NUM': 1,
                         'MODEL1_NAME': 'd02_t01',
                         'MODEL1_INPUT_NUM': 4,
