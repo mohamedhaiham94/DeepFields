@@ -8,13 +8,13 @@ if True:
                         'FILTER_NUM': 16,
                         'RANDOM_LEN_INPUT': 0,
 
-                        'TRAINING_MODE':1,
+                        'TRAINING_MODE':2,
 
                         'MODEL1_LOAD': True,
                         'MODEL1_ARCH_NUM': 1,
-                        'MODEL1_NAME': 'd02_t01',
+                        'MODEL1_NAME': 'd06_t01',
                         'MODEL1_INPUT_NUM': 4,
-                        'MODEL1_EPOCH': 1000, 'MODEL1_FILTER_NUM': 16,
+                        'MODEL1_EPOCH': 2000, 'MODEL1_FILTER_NUM': 16,
                         'MODEL1_LOSS_WEIGHT': 1.,
 
                         'MODEL2_LOAD':False, 'MODEL2_NAME':'a44_d01_t01',

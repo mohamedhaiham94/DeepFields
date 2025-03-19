@@ -35,7 +35,7 @@ def my_config():
         'RANDOM_LEN_INPUT': 0,
         'TRAINING_MODE': 1,
 
-        'MODEL_STEPS': 1,
+        'MODEL_STEPS': 2,
 
         'MODEL1_LOAD': False,
         'MODEL1_ARCH_NUM': 44,
@@ -126,6 +126,10 @@ def train_model(loaders, model_info, viz_info, forward_pass, TRAIN_PARAMS, DATA_
             optimizer.zero_grad()
 
             if TRAIN_PARAMS['TRAINING_MODE'] == 2 and (st_iter + 1) % 5 == 0:
+                gt_step1 = Y[:, :-1, :, :]
+                gt_step2 = Y[:, -1:, :, :]
+
+            if TRAIN_PARAMS['TRAINING_MODE'] == 2:
                 gt_step1 = Y[:, :-1, :, :]
                 gt_step2 = Y[:, -1:, :, :]
 
