@@ -5,3 +5,5 @@
 /napari/lib
 /napari-env
 /napari
+/interactiveView/build
+/interactiveView/dist
